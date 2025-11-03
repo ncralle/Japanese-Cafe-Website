@@ -44,7 +44,7 @@ html,body{
 .first-carousel {
   height: 60vh;               /* same height as others */
   object-fit: cover;
-  object-position: center 85%; 
+  object-position: center 95%; 
   display: block;
 }
 
