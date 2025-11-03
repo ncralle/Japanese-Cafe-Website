@@ -1,27 +1,180 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="YOUR DESCRIPTION HERE">
-    <meta name="author" content="YOUR NAME HERE">
-    <title>Starter Template · Bootstrap v5.3.7</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Nina Cralle">
+  <meta name="description" content="Sakura Café — cozy Japanese café serving matcha, onigiri, yakisoba, and seasonal sweets.">
+  <title>Sakura Café — Home</title>
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary py-3 border-bottom shadow-sm">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="images/logo.svg" alt="Sakura Café logo" width="36" height="36" class="me-2">
+          <span class="fw-bold brand-text">Sakura Café</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menu</a>
+              <ul class="dropdown-menu" aria-labelledby="menuDropdown">
+                <li><a class="dropdown-item" href="menu.html#drinks">Drinks</a></li>
+                <li><a class="dropdown-item" href="menu.html#savory">Savory</a></li>
+                <li><a class="dropdown-item" href="menu.html#sweets">Sweets</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="btn btn-sakura ms-lg-3" href="contact.html"><i class="bi bi-bag-heart me-1"></i> Order / Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-   <!-- Bootstrap v5.3.7 -->
-   <!-- LOAD BOOTSTRAP CSS - DO NOT DELETE -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">        
-   <!-- END LOADING BOOTSTRAP CSS -->
-    
-   <!-- Custom styles - add your own CSS to this stylesheet -->
-    <link href="style.css" rel="stylesheet">
-  </head>
-  <body>
-    
-<h1>Your content goes here</h1>
+  <!-- Hero -->
+  <section class="hero position-relative overflow-hidden">
+    <img src="images/hero.jpg" class="hero-bg" alt="Sunlit Japanese café interior with wooden counter and cherry blossoms">
+    <div class="container position-relative py-5">
+      <div class="row justify-content-start">
+        <div class="col-12 col-md-8 col-lg-6">
+          <div class="p-4 p-md-5 rounded-4 shadow hero-card bg-white-85">
+            <h1 class="display-5 fw-bold mb-2">Taste Calm. Sip Matcha.</h1>
+            <p class="lead mb-4">A cozy Japanese-inspired café serving handcrafted drinks, onigiri, and seasonal sweets made with care.</p>
+            <div class="d-flex gap-2">
+              <a href="menu.html" class="btn btn-sakura btn-lg"><i class="bi bi-cup-hot me-1"></i> Explore Menu</a>
+              <a href="contact.html" class="btn btn-outline-dark btn-lg"><i class="bi bi-geo-alt me-1"></i> Visit / Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- LOAD BOOTSTRAP 5.3.7 JAVASCRIPT - DO NOT DELETE -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-<!-- END LOADING BOOTSTRAP JAVASCRIPT -->
-      
-  </body>
+  <!-- Carousel -->
+  <section class="container my-5">
+    <h2 class="h3 fw-bold mb-3">Seasonal Highlights</h2>
+    <div id="seasonalCarousel" class="carousel slide rounded-4 overflow-hidden shadow" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#seasonalCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#seasonalCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#seasonalCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#seasonalCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/carousel-1.jpg" class="d-block w-100" alt="Whisked matcha latte with latte art">
+          <div class="carousel-caption d-none d-md-block">
+            <h3 class="carousel-title">Ceremonial Matcha</h3>
+            <p>Stone-ground Uji matcha, lightly sweetened.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/carousel-2.jpg" class="d-block w-100" alt="Assorted onigiri in bamboo tray">
+          <div class="carousel-caption d-none d-md-block">
+            <h3 class="carousel-title">Onigiri Trio</h3>
+            <p>Salmon, ume shiso, and miso-kombu.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/carousel-3.jpg" class="d-block w-100" alt="Dorayaki with red bean filling">
+          <div class="carousel-caption d-none d-md-block">
+            <h3 class="carousel-title">Dorayaki</h3>
+            <p>Fluffy pancakes with house-made anko.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/carousel-4.jpg" class="d-block w-100" alt="Iced hojicha latte with toasted aroma">
+          <div class="carousel-caption d-none d-md-block">
+            <h3 class="carousel-title">Iced Hojicha</h3>
+            <p>Toasty, smooth, and soothing.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#seasonalCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#seasonalCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Featured -->
+  <section class="container my-5">
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm">
+          <img src="images/matcha-latte.jpg" class="card-img-top" alt="Creamy matcha latte in ceramic cup">
+          <div class="card-body">
+            <h3 class="h5">Matcha Latte</h3>
+            <p class="mb-2 text-secondary">Uji matcha, choice of milk.</p>
+            <a href="menu.html#drinks" class="btn btn-outline-dark btn-sm">View Drinks</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm">
+          <img src="images/onigiri.jpg" class="card-img-top" alt="Triangular onigiri wrapped in nori">
+          <div class="card-body">
+            <h3 class="h5">Onigiri</h3>
+            <p class="mb-2 text-secondary">Classic fillings, fresh daily.</p>
+            <a href="menu.html#savory" class="btn btn-outline-dark btn-sm">View Savory</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm">
+          <img src="images/dorayaki.jpg" class="card-img-top" alt="Stack of dorayaki with anko">
+          <div class="card-body">
+            <h3 class="h5">Dorayaki</h3>
+            <p class="mb-2 text-secondary">House-made red bean paste.</p>
+            <a href="menu.html#sweets" class="btn btn-outline-dark btn-sm">View Sweets</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm">
+          <img src="images/anmitsu.jpg" class="card-img-top" alt="Anmitsu dessert with fruit and agar">
+          <div class="card-body">
+            <h3 class="h5">Anmitsu</h3>
+            <p class="mb-2 text-secondary">Refreshing, light, and seasonal.</p>
+            <a href="gallery.html" class="btn btn-outline-dark btn-sm">See Gallery</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-5 border-top">
+    <div class="container py-4 small d-flex flex-column flex-lg-row gap-3 justify-content-between align-items-center">
+      <p class="mb-0">© <span id="year"></span> Sakura Café. Crafted with Bootstrap 5.</p>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item"><i class="bi bi-geo-alt"></i> Harrisonburg, VA</li>
+        <li class="list-inline-item"><i class="bi bi-instagram"></i> @sakuracafe</li>
+        <li class="list-inline-item"><i class="bi bi-envelope"></i> hello@sakuracafe.example</li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
 </html>
