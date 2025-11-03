@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Nina Cralle">
+  <meta name="description" content="Sakura Café menu — matcha, hojicha, onigiri, yakisoba, and Japanese sweets.">
+  <title>Sakura Café — Menu</title>
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary py-3 border-bottom shadow-sm">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="images/logo.svg" alt="Sakura Café logo" width="36" height="36" class="me-2">
+          <span class="fw-bold brand-text">Sakura Café</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="menuDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menu</a>
+              <ul class="dropdown-menu" aria-labelledby="menuDropdown">
+                <li><a class="dropdown-item" href="#drinks">Drinks</a></li>
+                <li><a class="dropdown-item" href="#savory">Savory</a></li>
+                <li><a class="dropdown-item" href="#sweets">Sweets</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="btn btn-sakura ms-lg-3" href="contact.html"><i class="bi bi-bag-heart me-1"></i> Order / Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Breadcrumb -->
+  <nav aria-label="breadcrumb" class="bg-light border-bottom">
+    <ol class="breadcrumb container py-2 my-0">
+      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Menu</li>
+    </ol>
+  </nav>
+
+  <!-- Tabs -->
+  <main class="container my-5">
+    <h1 class="h2 fw-bold mb-4">Menu</h1>
+
+    <ul class="nav nav-pills mb-3" id="menuTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="drinks-tab" data-bs-toggle="tab" data-bs-target="#drinks" type="button" role="tab" aria-controls="drinks" aria-selected="true"><i class="bi bi-cup-hot me-1"></i> Drinks</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="savory-tab" data-bs-toggle="tab" data-bs-target="#savory" type="button" role="tab" aria-controls="savory" aria-selected="false"><i class="bi bi-egg-fried me-1"></i> Savory</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="sweets-tab" data-bs-toggle="tab" data-bs-target="#sweets" type="button" role="tab" aria-controls="sweets" aria-selected="false"><i class="bi bi-emoji-smile me-1"></i> Sweets</button>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="menuContent">
+      <!-- Drinks -->
+      <div class="tab-pane fade show active" id="drinks" role="tabpanel" aria-labelledby="drinks-tab" tabindex="0">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img src="images/matcha-latte.jpg" class="card-img-top" alt="Matcha latte">
+              <div class="card-body">
+                <h3 class="h5">Matcha Latte</h3>
+                <p class="text-secondary mb-2">Uji matcha whisked to order. Hot or iced.</p>
+                <p class="fw-semibold">$5.50</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img src="images/hojicha.jpg" class="card-img-top" alt="Hojicha latte">
+              <div class="card-body">
+                <h3 class="h5">Hojicha Latte</h3>
+                <p class="text-secondary mb-2">Roasted green tea with a toasty aroma.</p>
+                <p class="fw-semibold">$5.25</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img src="images/yuzu-soda.jpg" class="card-img-top" alt="Yuzu soda">
+              <div class="card-body">
+                <h3 class="h5">Yuzu Soda</h3>
+                <p class="text-secondary mb-2">Sparkling yuzu with a citrus lift.</p>
+                <p class="fw-semibold">$4.75</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Savory -->
+      <div class="tab-pane fade" id="savory" role="tabpanel" aria-labelledby="savory-tab" tabindex="0">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img src="images/onigiri.jpg" class="card-img-top" alt="Onigiri">
+              <div class="card-body">
+                <h3 class="h5">Onigiri Trio</h3>
+                <p class="text-secondary mb-2">Salmon, ume shiso, miso-kombu.</p>
+                <p class="fw-semibold">$7.50</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img src="images/yakisoba.jpg" class="card-img-top" alt="Yakisoba">
+              <div class="card-body">
+                <h3 class="h5">Yakisoba</h3>
+                <p class="text-secondary mb-2">Stir-fried noodles with cabbage & bonito.</p>
+                <p class="fw-semibold">$10.50</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sweets -->
+      <div class="tab-pane fade" id="sweets" role="tabpanel" aria-labelledby="sweets-tab" tabindex="0">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img src="images/dorayaki.jpg" class="card-img-top" alt="Dorayaki">
+              <div class="card-body">
+                <h3 class="h5">Dorayaki</h3>
+                <p class="text-secondary mb-2">Fluffy pancakes with anko.</p>
+                <p class="fw-semibold">$4.25</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img src="images/anmitsu.jpg" class="card-img-top" alt="Anmitsu dessert">
+              <div class="card-body">
+                <h3 class="h5">Anmitsu</h3>
+                <p class="text-secondary mb-2">Agar jelly, fruit, kuromitsu syrup.</p>
+                <p class="fw-semibold">$5.75</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="mt-5 border-top">
+    <div class="container py-4 small d-flex flex-column flex-lg-row gap-3 justify-content-between align-items-center">
+      <p class="mb-0">© <span id="year"></span> Sakura Café. Crafted with Bootstrap 5.</p>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item"><i class="bi bi-geo-alt"></i> Harrisonburg, VA</li>
+        <li class="list-inline-item"><i class="bi bi-instagram"></i> @sakuracafe</li>
+        <li class="list-inline-item"><i class="bi bi-envelope"></i> hello@sakuracafe.example</li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
