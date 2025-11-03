@@ -34,9 +34,11 @@ html,body{
 /* Carousel */
 .carousel-item img {
   width: 100%;
-  height: 60vh; /* try 50–70vh depending on how tall you want it */
-  object-fit: cover;
-  object-position: center;
+  height: 60vh;            /* controls how tall the carousel is — try 60–70vh */
+  object-fit: cover;        /* crops the photo instead of stretching */
+  object-position: center;  /* centers the visible part */
+  display: block;
+}
 }
 
 /* Carousel caption */
