@@ -39,6 +39,13 @@ html,body{
   object-position: center;  /* centers the visible part */
   display: block;
 }
+
+/* Adjust only the first carousel image crop */
+.first-carousel {
+  height: 60vh;               /* same height as others */
+  object-fit: cover;
+  object-position: center 85%; 
+  display: block;
 }
 
 /* Carousel caption */
