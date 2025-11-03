@@ -12,6 +12,19 @@
   --paper:#fffafc;
 }
 
+/* Section backgrounds */
+.bg-blush-light {
+  background-color: rgba(231, 201, 198, 0.25); /* very light blush */
+}
+
+.bg-icing-light {
+  background-color: rgba(250, 223, 204, 0.3); /* very light icing */
+}
+
+.bg-sage-light {
+  background-color: rgba(172, 176, 135, 0.15); /* very light sage */
+}
+
 /*  Base  */
 html, body{
   /* one place to set body styles */
