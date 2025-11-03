@@ -27,6 +27,9 @@ html,body{
   object-position: center;
   display: block;
 }
+.hero-bg {
+  border: 5px solid hotpink;
+}
 
 
 /* Carousel caption */
