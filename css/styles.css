@@ -63,7 +63,10 @@ h1, h2, h3, h4, h5{
   object-position: center 95%; /* adjust crop here */
   filter: saturate(.95) contrast(1.02);
 }
-.bg-white-85{ background: rgba(255,255,255,.85); }
+.bg-white-85{ background: rgba(255,255,255,0.55);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            }
 
 /*  Carousel  */
 .carousel-item img{
