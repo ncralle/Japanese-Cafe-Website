@@ -71,6 +71,13 @@ h1, h2, h3, h4, h5{
   object-fit: cover; object-position: center;
   display: block;
 }
+
+.carousel-caption h5,
+.carousel-caption p,
+.carousel-title {
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
 /* only the first slide tweak */
 .first-carousel{ object-position: center 25%; }
 
