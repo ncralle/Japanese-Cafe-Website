@@ -126,3 +126,83 @@ footer{
   background: linear-gradient(180deg, var(--blush) 0%, rgba(231,201,198,.95) 100%);
   color:#4A4A4A;
 }
+
+/* Semantic aliases (keeps palette intact) */
+:root {
+  --primary: var(--sage);
+  --primary-strong: #8f9668; /* slightly deeper than --sage */
+  --accent: var(--peanut);
+  --surface: var(--ivory);
+  --surface-2: var(--icing);
+  --text: var(--ink-2);
+  --text-strong: var(--ink);
+  --border-soft: rgba(0,0,0,.08);
+  --shadow-sm: 0 6px 18px rgba(0,0,0,.06);
+}
+
+/* Slight navbar lift and consistent link colors */
+.navbar{
+  background-color: var(--surface-2);
+  box-shadow: var(--shadow-sm);
+}
+.navbar .nav-link{ color: var(--text); }
+.navbar .nav-link:hover{ color: var(--accent); }
+.navbar .nav-link.active{ color: var(--primary); font-weight:600; }
+
+/* Buttons: keep class, just polish */
+.btn-sakura{
+  background-color: var(--primary);
+  color: #fff;
+  border: 1px solid var(--primary);
+  border-radius: 999px;
+  transition: background-color .2s ease, border-color .2s ease, transform .02s;
+}
+.btn-sakura:hover{
+  background-color: var(--primary-strong);
+  border-color: var(--primary-strong);
+}
+.btn-sakura:active{ transform: translateY(1px); }
+
+/* Accessible focus ring */
+:focus-visible{
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* HERO fixes: show more of the matcha and improve text readability */
+.hero{ min-height: 68vh; position: relative; }
+.hero-bg{
+  object-position: center 70%;   /* <-- lower number shows more bottom; higher shows more top */
+  filter: saturate(.95) contrast(1.02);
+}
+
+/* A subtle darkening so headline stays readable */
+.hero::after{
+  content:"";
+  position:absolute; inset:0;
+  background: linear-gradient(180deg, rgba(0,0,0,.26), rgba(0,0,0,.12) 55%, rgba(0,0,0,.06));
+  pointer-events:none;
+}
+
+/* Make the glass card a touch more legible on busy photos */
+.bg-white-85{
+  background: rgba(250,223,204,0.78);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,255,255,0.4);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Cards: gentle separation on light bg */
+.card{
+  border: 1px solid var(--border-soft);
+  border-radius: 16px;
+  box-shadow: var(--shadow-sm);
+}
+
+/* Mobile: slightly different crop so bowl stays in frame */
+@media (max-width: 768px){
+  .hero{ min-height: 56vh; }
+  .hero-bg{ object-position: center 60%; }
+}
+
