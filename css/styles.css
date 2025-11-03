@@ -27,9 +27,6 @@ html,body{
   object-position: center 95%;
   display: block;
 }
-.hero-bg {
-  border: 5px solid hotpink;
-}
 
 /* Carousel */
 .carousel-item img {
@@ -50,6 +47,15 @@ html,body{
 
 /* Carousel caption */
 .carousel-title{ text-shadow: 0 2px 12px rgba(0,0,0,.35); }
+
+/* Make all card-top images the same height */
+.card-img-top{
+  width: 100%;
+  height: 220px;          /* try 200–260px; adjust to taste */
+  object-fit: cover;       /* crop instead of stretch */
+  object-position: center; /* tweak per image if needed */
+  display: block;
+}
 
 /* Gallery hover */
 .card-zoom img{ transition: transform .4s ease; }
