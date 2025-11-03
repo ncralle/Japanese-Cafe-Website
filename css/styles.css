@@ -73,9 +73,14 @@ h1, h2, h3, h4, h5{
 }
 
 .carousel-caption h5,
-.carousel-caption p,
-.carousel-title {
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+.carousel-caption .carousel-title {
+  color: #fff; /* white text */
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6); /* subtle glow for readability */
+  font-weight: 600;
+}
+.carousel-caption p {
+  color: #f9f9f9; /* slightly softer white for body text */
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
 }
 
 /* only the first slide tweak */
