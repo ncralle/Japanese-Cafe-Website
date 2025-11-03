@@ -31,6 +31,13 @@ html,body{
   border: 5px solid hotpink;
 }
 
+/* Carousel */
+.carousel-item img {
+  width: 100%;
+  height: 60vh; /* try 50–70vh depending on how tall you want it */
+  object-fit: cover;
+  object-position: center;
+}
 
 /* Carousel caption */
 .carousel-title{ text-shadow: 0 2px 12px rgba(0,0,0,.35); }
