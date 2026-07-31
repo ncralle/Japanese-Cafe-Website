@@ -152,6 +152,12 @@ a:hover{
   background-color: var(--dry-sage);
 }
 
+.navbar-logo {
+  display: block;
+  width: clamp(180px, 20vw, 225px);
+  height: auto;
+}
+
 /* Buttons */
 .btn-sakura{
   --bs-btn-color: var(--snow);
