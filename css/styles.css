@@ -89,7 +89,7 @@ a:hover{
 }
 
 .navbar{
-  background-color: var(--almond-silk);
+  background-color: #ffffff;
   transition: background-color .3s ease;
 }
 
