@@ -387,7 +387,7 @@ footer .bi{
 
 /* Slight navbar lift and consistent link colors */
 .navbar{
-  background-color: var(--surface-2);
+  background-color: #ffffff;
   box-shadow: var(--shadow-sm);
 }
 
