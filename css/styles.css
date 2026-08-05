@@ -61,10 +61,20 @@ html, body{
 
 h1, h2, h3, h4, h5{
   font-family: "Montserrat", sans-serif;
-  font-weight: 300;
   text-transform: uppercase;
-  letter-spacing: 0.15em;
   color: var(--crimson-violet);
+}
+
+/* Hero display: light + airy */
+h1{
+  font-weight: 300;
+  letter-spacing: 0.15em;
+}
+
+/* Section + card headings: mid weight, tighter tracking so they hold up small */
+h2, h3, h4, h5{
+  font-weight: 500;
+  letter-spacing: 0.07em;
 }
 
 a{
