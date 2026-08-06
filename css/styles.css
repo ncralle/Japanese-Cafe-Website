@@ -444,6 +444,12 @@ footer .bi{
   outline-offset: 2px;
 }
 
+/* Don't draw the focus box around tab panels on load */
+.tab-pane:focus,
+.tab-pane:focus-visible{
+  outline: none;
+}
+
 /* HERO fixes: show more of the matcha and improve text readability */
 .hero{
   min-height: 68vh;
